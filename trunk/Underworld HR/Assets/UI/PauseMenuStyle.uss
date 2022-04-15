@@ -1,0 +1,143 @@
+.title {
+    font-size: 50px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.menuList > .unity-label {
+    -unity-text-align: upper-left;
+    font-size: 35px;
+    border-left-width: 5px;
+    border-left-color: rgb(0, 114, 180);
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.warning-box {
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgb(207, 207, 207);
+    border-right-color: rgb(207, 207, 207);
+    border-top-color: rgb(207, 207, 207);
+    border-bottom-color: rgb(207, 207, 207);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menuList {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.menuList > .unity-label:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 0;
+    -unity-font-style: bold;
+    border-bottom-width: 0;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+#menu-screens {
+    position: absolute;
+    left: 152px;
+    top: 166px;
+    right: 162px;
+    bottom: 80px;
+}
+
+.menu-button {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 35px;
+    border-left-color: rgb(0, 114, 180);
+    border-left-width: 5px;
+}
+
+.menu-button:hover {
+    -unity-font-style: bold;
+    background-color: rgb(154, 171, 183);
+    border-left-width: 8px;
+}
+
+.option-slider {
+    font-size: 20px;
+}
+
+.option-toggle {
+    font-size: 20px;
+}
+
+.option-list {
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+.option-list > * {
+    margin-bottom: 30px;
+}
+
+.option-dropdown {
+    font-size: 30px;
+    background-color: rgb(204, 204, 204);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left-color: rgb(153, 153, 153);
+    border-right-color: rgb(153, 153, 153);
+    border-top-color: rgb(153, 153, 153);
+    border-bottom-color: rgb(153, 153, 153);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    height: 54px;
+}
+
+.option-dropdown-arrow {
+    width: 32px;
+    height: 32px;
+    background-image: url('/Assets/UI/UISprites/dropdown_arrow.png');
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    align-items: flex-end;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.option-indent {
+    margin-left: 20px;
+}
+
+.menu-button-warning {
+    border-left-color: rgb(180, 61, 0);
+    border-right-color: rgb(180, 61, 0);
+    border-top-color: rgb(180, 61, 0);
+    border-bottom-color: rgb(180, 61, 0);
+}
+
+.menu-button-warning:hover {
+    background-color: rgb(183, 155, 154);
+    -unity-font-style: bold;
+}
+
+.unity-label {
+}

@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="ScoresheetStyle.uss" />
+    <ui:VisualElement name="background" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.17);">
+        <ui:VisualElement name="page-background" style="width: 35%; height: 80%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; background-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:VisualElement name="page-header">
+                <ui:Label text="Name: Agnes" display-tooltip-when-elided="true" name="header-name" />
+                <ui:Label text="Date: " display-tooltip-when-elided="true" name="header-date" />
+            </ui:VisualElement>
+            <ui:Label text="Performance Evaluation" display-tooltip-when-elided="true" name="page-title" style="-unity-font-style: bold; font-size: 40px;" />
+            <ui:VisualElement name="level-stats" style="width: 50%; margin-left: auto; margin-right: auto;">
+                <ui:VisualElement name="success-stamp" class="stamp" style="height: 250px;" />
+                <ui:VisualElement name="star-container" class="star-container" />
+            </ui:VisualElement>
+            <ui:VisualElement name="tip-box" />
+            <ui:VisualElement name="button-container">
+                <ui:Button text="Next Level" display-tooltip-when-elided="true" name="next-button" style="margin-left: auto; margin-right: auto;" />
+                <ui:VisualElement class="horizontal-buttons" style="flex-direction: row; margin-top: 25px;">
+                    <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="menu-button" />
+                    <ui:Button text="Retry" display-tooltip-when-elided="true" name="retry-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="save-area">
+            <ui:Label text="Saving Game..." display-tooltip-when-elided="true" name="save-message" style="font-size: 25px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

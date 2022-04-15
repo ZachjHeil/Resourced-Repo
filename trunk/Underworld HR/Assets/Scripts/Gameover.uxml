@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="width: 100%; height: 100%; background-color: rgba(212, 31, 31, 0.3);">
+        <ui:VisualElement name="GameOverBG" style="width: 45%; height: 98%; left: 27%; top: 1%; background-image: url(&apos;/Assets/UI/GameOver_BG 1.png&apos;);">
+            <ui:Label text="Name: Agnes" display-tooltip-when-elided="true" name="AgnesName" style="-unity-background-image-tint-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: 30px; width: 100%; left: 0; padding-left: 2.5%; padding-top: 1%;">
+                <ui:Label display-tooltip-when-elided="true" name="DateReal" text="0" style="width: 50%; left: 0; color: rgb(0, 0, 0); font-size: 30px; top: 0; -unity-text-align: upper-right; padding-right: 0; padding-top: 0; padding-left: 0; padding-bottom: 0; margin-left: 40%;" />
+            </ui:Label>
+            <ui:VisualElement name="levelfailedstamp" style="background-image: url(&apos;/Assets/UI/UISprites/levelfailedstamp.png&apos;); width: 75%; height: 40%; left: 13%; top: 0; bottom: 100%;" />
+            <ui:VisualElement name="AgnesGameOver" style="background-image: url(&apos;/Assets/UI/UISprites/GameOver_AgnesV2.png&apos;); width: 50%; height: 20%; left: 25%; top: -10%; display: flex;" />
+            <ui:Label text="Message" display-tooltip-when-elided="true" name="GameOverTips" style="background-image: url(&apos;/Assets/UI/UISprites/faillatte_tip.png&apos;); height: 134px; width: 613px; -unity-text-align: middle-left; padding-left: 18%; font-size: 16px; color: rgb(255, 0, 0); top: -5%; left: 15%; -unity-font-style: bold; max-width: 613px; white-space: normal; padding-top: 1%; padding-bottom: 2%;">
+                <ui:VisualElement style="background-image: url(&apos;/Assets/UI/UISprites/Latte.png&apos;); width: 93px; height: 98px; position: absolute; top: 18px; left: 26px;" />
+            </ui:Label>
+            <ui:VisualElement name="Buttons" style="flex-direction: row; align-items: center; justify-content: center; top: 0;">
+                <ui:Label text="Main Menu" display-tooltip-when-elided="true" name="Menu" style="font-size: 25px; color: rgb(0, 0, 0); width: 250px; height: 125px; -unity-text-align: upper-center; background-image: url(&apos;/Assets/UI/GameOver_Button.png&apos;); padding-top: 45px; margin-right: 50px;" />
+                <ui:Label text="Retry" display-tooltip-when-elided="true" name="Retry" style="background-image: url(&apos;/Assets/UI/GameOver_Button.png&apos;); width: 250px; height: 125px; font-size: 25px; color: rgb(0, 0, 0); -unity-text-align: upper-center; padding-top: 45px; margin-left: 50px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,45 @@
+.shiftmenu {
+    background-color: rgba(204, 204, 204, 255);
+    border-left-color: rgba(153, 153, 153, 255);
+    border-right-color: rgba(153, 153, 153, 255);
+    border-top-color: rgba(153, 153, 153, 255);
+    border-bottom-color: rgba(153, 153, 153, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+    align-items: center;
+}
+
+.shiftmenu-leftarrow {
+    background-image: url('/Assets/UI/UISprites/shift_arrow_left.png');
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    width: 32px;
+    height: 32px;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+}
+
+.shiftmenu-rightarrow {
+    width: 32px;
+    height: 32px;
+    background-image: url('/Assets/UI/UISprites/shift_arrow_right.png');
+    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.shiftmenu-label {
+    font-size: 30px;
+}

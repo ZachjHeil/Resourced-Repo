@@ -1,0 +1,70 @@
+#page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-width: 20px;
+}
+
+#page-background .unity-label {
+}
+
+#page-background {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-direction: column;
+}
+
+.horizontal-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#button-container .unity-button {
+    font-size: 25px;
+    -unity-font-style: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.stamp {
+    background-color: rgb(209, 145, 145);
+    height: 75%;
+}
+
+.star-on {
+    width: 90px;
+    height: 90px;
+    background-image: url('/Assets/UI/bigstar_on.png');
+}
+
+.star-off {
+    background-image: url('/Assets/UI/bigstar_off.png');
+    width: 90px;
+    height: 90px;
+}
+
+.star-container {
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#page-title {
+    font-size: 30px;
+    -unity-text-align: upper-center;
+    margin-bottom: 75px;
+    flex-wrap: wrap;
+}
+
+#save-area {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}

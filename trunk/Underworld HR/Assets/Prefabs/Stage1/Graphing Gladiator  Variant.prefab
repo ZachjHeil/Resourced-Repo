@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1254606143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5148187937998766726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcc60112a20f90478467411ed501f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: <PINK ENEMY>
+    sentences:
+    - Find me a <PINK OBJECT>
+  convo:
+    portraitRadial: {r: 0, g: 0, b: 0, a: 0}
+    lines:
+    - name: Analytics Assistant
+      agnesSpeaking: 0
+      line: "Look here! This is my handy dandy graph I\u2019ve drawn up to explain
+        to any would-be challenger how badly I\u2019d CRUSH them if they fought me. 
+        You better back off little lady because you have NO graphical evidence to
+        prove you\u2019re anywhere NEAR my fighting prowess."
+      leftPortrait: {fileID: 2800000, guid: a58ce21758faf0349b8b25025e563775, type: 3}
+      rightPortrait: {fileID: 0}
+      voiceAudio: {fileID: 8300000, guid: e10695063cab10345bfbb3137a22f7eb, type: 3}
+    agnesPortrait: {fileID: 0}
+    hathorPortrait: {fileID: 0}
+    anubisPortrait: {fileID: 0}
+    dioPortrait: {fileID: 0}
+    hypnosPortrait: {fileID: 0}
+    lokiPortrait: {fileID: 0}
+    idunPortrait: {fileID: 0}
+  successDialogue:
+    portraitRadial: {r: 0, g: 0, b: 0, a: 0}
+    lines:
+    - name: Analytics Assistant
+      agnesSpeaking: 0
+      line: "You\u2019ve returned! Is that a graph of your own? Well it looks like
+        it says.. you\u2019re\u2026 you- you\u2019re 5 million times stronger than
+        me. *Gulp* Oh wow I just forgot! I left the kettle on! Guess we\u2019ll have
+        to fight later!"
+      leftPortrait: {fileID: 2800000, guid: a58ce21758faf0349b8b25025e563775, type: 3}
+      rightPortrait: {fileID: 0}
+      voiceAudio: {fileID: 0}
+    agnesPortrait: {fileID: 0}
+    hathorPortrait: {fileID: 0}
+    anubisPortrait: {fileID: 0}
+    dioPortrait: {fileID: 0}
+    hypnosPortrait: {fileID: 0}
+    lokiPortrait: {fileID: 0}
+    idunPortrait: {fileID: 0}
+  TxtBoxBg: {fileID: 2800000, guid: 1a470d2091cc61f45ad9f09b16fefbd3, type: 3}
+  currentObject: {fileID: 0}
+--- !u!1001 &2106248811708302308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6055399324792318971}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bea4813c8fc722040a879cecabd61e8d, type: 2}
+    - target: {fileID: 919132149155446097, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+      propertyPath: m_Name
+      value: FlameBoy_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 588653971bf608249bdbe01793a65f8d, type: 3}
+--- !u!1001 &2106248813526810315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505713019258174541, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_Name
+      value: 'Graphing Gladiator '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505713019258174541, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399576452836372783, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: dt1
+      value: 
+      objectReference: {fileID: 1254606143}
+    - target: {fileID: 8538791932288563439, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+--- !u!1 &5148187937998766726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6505713019258174541, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+  m_PrefabInstance: {fileID: 2106248813526810315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6055399324792318971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5274840757234603312, guid: 3b3bc4a8139ef8d4c95add1bcae51659, type: 3}
+  m_PrefabInstance: {fileID: 2106248813526810315}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Back" style="height: 5%; width: 10%; left: 85%; top: 90%; background-color: rgb(82, 82, 82);">
+        <ui:Label text="Back" display-tooltip-when-elided="true" name="Backbtn" style="font-size: 24px; left: auto; top: auto; -unity-font-style: bold; -unity-text-align: middle-center; color: rgb(255, 255, 255); width: 100%; height: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>

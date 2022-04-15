@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="PauseMenuStyle.uss" />
+    <ui:VisualElement name="MenuPanel" style="position: relative; width: 100%; height: 100%; visibility: visible; display: flex; align-items: center;">
+        <ui:VisualElement name="Clipboard" style="position: relative; height: 1080px; width: 952px; top: auto; left: auto; background-image: none; bottom: auto; min-width: 952px; min-height: 1080px;">
+            <ui:VisualElement name="menu-screens" style="background-color: rgb(255, 255, 255);">
+                <ui:VisualElement name="options-screen" style="display: flex; align-items: center; justify-content: space-around; margin-top: 15%;">
+                    <ui:Label text="Settings" display-tooltip-when-elided="true" style="position: relative; color: rgb(0, 0, 0); font-size: 60px; -unity-text-align: middle-center; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="OptionsMenuButtons" class="menuList" style="position: relative; height: 586px; -unity-text-align: lower-left; white-space: nowrap; align-items: center; width: auto; flex-direction: column; flex-wrap: wrap; display: flex; justify-content: space-between; margin-top: 5%;">
+                        <ui:Label text="Graphics" display-tooltip-when-elided="true" name="graphics-button" style="color: rgb(0, 0, 0); font-size: 35px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                        <ui:Label text="Gameplay" display-tooltip-when-elided="true" name="gameplay-button" style="color: rgb(0, 0, 0); font-size: 35px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; display: none;" />
+                        <ui:Label text="Audio" display-tooltip-when-elided="true" name="audio-button" style="color: rgb(0, 0, 0); font-size: 35px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                        <ui:Label text="Use Default Settings" display-tooltip-when-elided="true" name="options-restore-button" class="menu-button-warning" style="color: rgb(0, 0, 0); display: flex; font-size: 35px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                        <ui:Label text="Back" display-tooltip-when-elided="true" name="options-back-button" style="color: rgb(0, 0, 0); font-size: 35px; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); width: 50%; -unity-text-align: middle-center; height: 15%; border-top-left-radius: 10%; border-bottom-left-radius: 10%; border-top-right-radius: 10%; border-bottom-right-radius: 10%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="audio-screen" style="display: none;">
+                    <ui:Label text="Audio Settings" display-tooltip-when-elided="true" class="title" style="position: relative; color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="AudioButtons" class="option-list" style="position: relative; height: 421px; -unity-text-align: lower-left; white-space: nowrap; align-items: stretch; width: auto; flex-direction: column; flex-wrap: wrap;">
+                        <ui:SliderInt picking-mode="Ignore" label="Master Volume" value="42" high-value="100" name="mastervol-slider" class="option-slider" style="margin-bottom: 10px;" />
+                        <ui:VisualElement class="option-indent">
+                            <ui:SliderInt picking-mode="Ignore" label="Music Volume" value="42" high-value="100" name="musicvol-slider" class="option-slider" />
+                            <ui:SliderInt picking-mode="Ignore" label="SFX Volume" value="42" high-value="100" name="sfxvol-slider" class="option-slider" />
+                            <ui:SliderInt picking-mode="Ignore" label="Voice Volume" value="42" high-value="100" name="voicevol-slider" class="option-slider" />
+                        </ui:VisualElement>
+                        <ui:Label text="Apply" display-tooltip-when-elided="true" name="audio-apply-button" class="menu-button" />
+                        <ui:Label text="Cancel" display-tooltip-when-elided="true" name="audio-cancel-button" class="menu-button" style="color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="gameplay-screen" style="display: none;">
+                    <ui:Label text="Gameplay Settings" display-tooltip-when-elided="true" class="title" style="position: relative; color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="GameplayButtons" class="option-list" style="position: relative; height: 421px; -unity-text-align: lower-left; white-space: nowrap; align-items: stretch; width: auto; flex-direction: column; flex-wrap: wrap;">
+                        <ui:Toggle label="Show Grid" name="gameplay-grid-toggle" class="option-toggle" />
+                        <ui:Label text="Apply" display-tooltip-when-elided="true" name="gameplay-apply-button" class="menu-button" />
+                        <ui:Label text="Cancel" display-tooltip-when-elided="true" name="gameplay-cancel-button" class="menu-button" style="color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="graphics-screen" style="display: none;">
+                    <ui:Label text="Graphics Settings" display-tooltip-when-elided="true" class="title" style="position: relative; color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="GraphicsButtons" class="option-list" style="position: relative; height: 421px; -unity-text-align: lower-left; white-space: nowrap; align-items: stretch; width: auto; flex-direction: column; flex-wrap: wrap; display: flex;">
+                        <ui:VisualElement class="shiftmenu" style="display: none;">
+                            <ui:Button text="Button" display-tooltip-when-elided="true" class="shiftmenu-leftarrow" />
+                            <ui:Label text="Label" display-tooltip-when-elided="true" class="shiftmenu-label" />
+                            <ui:Button text="Button" display-tooltip-when-elided="true" class="shiftmenu-rightarrow" />
+                        </ui:VisualElement>
+                        <ui:Toggle label="Fullscreen" name="graphics-fullscreen-toggle" class="option-toggle" />
+                        <ui:Label text="Apply" display-tooltip-when-elided="true" name="graphics-apply-button" class="menu-button" style="display: flex;" />
+                        <ui:Label text="Cancel" display-tooltip-when-elided="true" name="graphics-cancel-button" class="menu-button" style="color: rgb(0, 0, 0);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

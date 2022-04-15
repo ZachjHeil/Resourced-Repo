@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="background" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+        <ui:Button text="Skip" display-tooltip-when-elided="true" name="skip-button" style="width: 150px; height: 50px; font-size: 25px; position: absolute; right: 5%; bottom: 5%;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="MenuStyle.uss" />
+    <ui:VisualElement name="main-menu" class="menu" style="display: flex; visibility: visible; height: 70%; width: 57%; background-color: rgb(75, 0, 0); position: relative; min-width: auto; min-height: auto; left: 20%; top: 19%; background-image: url(&apos;/Assets/UI/UISprites/ComputerBackground.png&apos;);">
+        <ui:Label text="ReSourced" display-tooltip-when-elided="true" name="title-screen1" class="title" style="background-color: rgba(56, 56, 56, 0); font-size: 125px; color: rgb(82, 82, 82); top: 30px;" />
+        <ui:Label text="Main Menu" display-tooltip-when-elided="true" name="subtitle-screen1" style="color: rgb(82, 82, 82); font-size: 60px; -unity-text-align: middle-center;" />
+        <ui:VisualElement name="main-menu-buttons" class="menu-list">
+            <ui:Label text="New Game" display-tooltip-when-elided="true" name="new-game-button" style="color: rgb(82, 82, 82); font-size: 60px;" />
+            <ui:Label text="Continue" display-tooltip-when-elided="true" name="continue-button" style="color: rgb(82, 82, 82); font-size: 60px;" />
+            <ui:Label text="Level Select" display-tooltip-when-elided="true" name="level-select-button" style="visibility: visible; color: rgb(82, 82, 82); font-size: 60px;" />
+            <ui:Label text="Options" display-tooltip-when-elided="true" name="options-button" style="color: rgb(82, 82, 82); font-size: 60px;" />
+            <ui:Label text="Quit Game" display-tooltip-when-elided="true" name="exit-button" style="color: rgb(82, 82, 82); font-size: 60px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="level-menu" class="menu" style="display: none; visibility: visible; width: 57%; min-width: auto; min-height: auto; height: 70%; left: 20%; top: 19%; background-image: url(&apos;/Assets/UI/UISprites/ComputerBackground.png&apos;); flex-direction: row; align-items: stretch;">
+        <ui:VisualElement name="levels" class="stage-list" style="margin-right: 0; display: flex; width: 80%; left: 10%; top: 5%; background-color: rgb(255, 255, 255); margin-left: 0; margin-top: 0; margin-bottom: 0; height: 90%; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="level-back-button" class="back-button" style="margin-left: -100px; left: -10px; top: 0; width: 200px;" />
+            <ui:VisualElement name="intro-levels" class="level-list" style="top: 37px; height: 325px; left: -134px; position: absolute;">
+                <ui:Label text="Prologue" display-tooltip-when-elided="true" name="prologue-button" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; height: 30px; width: 125px; left: -10px;" />
+                <ui:Label text="Tutorial" display-tooltip-when-elided="true" name="tutorial-button" style="position: absolute; top: 44px; left: -2px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="track" style="background-image: url(&apos;/Assets/UI/UISprites/LevelSelectTrail.png&apos;); width: 596px; height: 546px; flex-wrap: nowrap; flex-shrink: 1; flex-direction: column; position: absolute; top: 53px; left: 144px;" />
+            <ui:VisualElement name="greece-levels" class="level-list" style="top: -50%; left: 40%; width: 50%; flex-direction: row; align-items: center;">
+                <ui:Label text="3" display-tooltip-when-elided="true" name="stage2-level1-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; width: 175px; height: 150px; background-color: rgb(204, 255, 186); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(2, 108, 0); border-right-color: rgb(2, 108, 0); border-top-color: rgb(2, 108, 0); border-bottom-color: rgb(2, 108, 0); left: 298px; right: -39px; font-size: 60px; color: rgb(0, 0, 0); -unity-text-align: middle-center; position: absolute; top: 512px;">
+                    <ui:VisualElement name="stage2-level1-stars" style="width: 100%; height: 32px; top: 75%; flex-direction: row; justify-content: space-around;" />
+                </ui:Label>
+                <ui:Label text="4" display-tooltip-when-elided="true" name="stage2-level2-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; left: -45px; width: 175px; height: 150px; background-color: rgb(204, 255, 186); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(2, 108, 0); border-right-color: rgb(2, 108, 0); border-top-color: rgb(2, 108, 0); border-bottom-color: rgb(2, 108, 0); right: 302px; font-size: 60px; color: rgb(0, 0, 0); -unity-text-align: middle-center; position: absolute; top: 524px;">
+                    <ui:VisualElement name="stage2-level2-stars" style="width: 100%; height: 32px; top: 75%; flex-direction: row; justify-content: space-around;" />
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="norse-levels" class="level-list" style="top: -30%; width: 350px; flex-direction: row; align-items: center;">
+                <ui:Label text="5" display-tooltip-when-elided="true" name="stage3-level1-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; -unity-text-align: middle-center; width: 175px; height: 150px; top: 461px; left: 46px; background-color: rgb(186, 222, 255); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(0, 56, 108); border-right-color: rgb(0, 56, 108); border-top-color: rgb(0, 56, 108); border-bottom-color: rgb(0, 56, 108); font-size: 60px; color: rgb(0, 0, 0); position: absolute;">
+                    <ui:VisualElement name="stage3-level1-stars" style="flex-direction: row; justify-content: space-around; width: 100%; height: 32px; top: 75%;" />
+                </ui:Label>
+                <ui:Label text="6" display-tooltip-when-elided="true" name="stage3-level2-button" style="-unity-text-align: middle-center; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; width: 175px; height: 150px; top: 674px; background-color: rgb(186, 222, 255); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(0, 56, 108); border-right-color: rgb(0, 56, 108); border-top-color: rgb(0, 56, 108); border-bottom-color: rgb(0, 56, 108); font-size: 60px; color: rgb(0, 0, 0); left: 181px; position: absolute;">
+                    <ui:VisualElement name="stage3-level2-stars" style="flex-direction: row; height: 32px; top: 75%;" />
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="finale-levels" class="level-list" style="flex-direction: row; align-items: center; left: 60%; top: -30%; width: 300px;">
+                <ui:Label text="Epilogue" display-tooltip-when-elided="true" name="epilogue-button" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; top: -195px; position: absolute; left: -660px;" />
+                <ui:Label text="Final Level" display-tooltip-when-elided="true" name="stage4-level1-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; width: 175px; height: 150px; top: 667px; left: -23px; background-color: rgb(216, 186, 255); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(54, 0, 108); border-right-color: rgb(54, 0, 108); border-top-color: rgb(54, 0, 108); border-bottom-color: rgb(54, 0, 108); -unity-text-outline-width: 0; font-size: 50px; -unity-text-align: middle-center; color: rgb(0, 0, 0); position: absolute;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="egypt-levels" class="level-list" style="align-items: center; justify-content: flex-start; top: -65%; height: 700px; flex-direction: row; position: absolute;">
+                <ui:Label text="1" display-tooltip-when-elided="true" name="stage1-level1-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; height: 150px; width: 175px; background-color: rgb(255, 152, 152); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; top: 466px; font-size: 70px; color: rgb(0, 0, 0); -unity-text-align: middle-center; border-left-color: rgb(108, 0, 0); border-right-color: rgb(108, 0, 0); border-top-color: rgb(108, 0, 0); border-bottom-color: rgb(108, 0, 0); left: 66px; position: absolute;">
+                    <ui:VisualElement name="stage1-level1-stars" style="width: 100%; height: 32px; flex-direction: row; justify-content: space-around; top: 70%;" />
+                </ui:Label>
+                <ui:Label text="2" display-tooltip-when-elided="true" name="stage1-level2-button" style="border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; width: 175px; height: 150px; left: 454px; top: 474px; background-color: rgb(255, 152, 152); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-color: rgb(108, 0, 0); border-right-color: rgb(108, 0, 0); border-top-color: rgb(108, 0, 0); border-bottom-color: rgb(108, 0, 0); font-size: 70px; color: rgb(0, 0, 0); -unity-text-align: middle-center; position: absolute;">
+                    <ui:VisualElement name="stage1-level2-stars" style="width: 100%; height: 32px; flex-direction: row; justify-content: space-around; top: 75%;" />
+                </ui:Label>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="options-menu" class="menu" style="display: none;">
+        <ui:Label text="ReSourced" display-tooltip-when-elided="true" name="title-screen2" class="title" />
+        <ui:Label text="Options" display-tooltip-when-elided="true" name="subtitle-screen2" class="subtitle" />
+        <ui:VisualElement name="option-buttons" class="menu-list">
+            <ui:Label text="Graphics" display-tooltip-when-elided="true" name="graphics-button" />
+            <ui:Label text="Controls" display-tooltip-when-elided="true" name="controls-button" />
+            <ui:Label text="Back" display-tooltip-when-elided="true" name="options-back-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="PauseMenuStyle.uss" />
+    <ui:VisualElement name="exit-warning" class="warning-box" style="visibility: visible; display: none;">
+        <ui:VisualElement name="warning-title-area">
+            <ui:Label text="Are you sure?" display-tooltip-when-elided="true" name="warning-title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="warning-message-area">
+            <ui:Label text="Are you sure you want to Quit?&#10;You will lose all unsaved progress." display-tooltip-when-elided="true" name="warning-message" />
+        </ui:VisualElement>
+        <ui:VisualElement name="warning-button-area">
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="warning-yes-button" />
+            <ui:Button text="Cancel" display-tooltip-when-elided="true" name="warning-no-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuPanel" style="position: absolute; width: 1920px; height: 1080px; visibility: visible; display: flex;">
+        <ui:VisualElement name="Clipboard" style="position: absolute; height: 1080px; width: 952px; top: -16px; left: 478px; background-image: url(&apos;/Assets/UI/Clipboard.png&apos;); bottom: 16px;" />
+        <ui:Label text="Game Paused" display-tooltip-when-elided="true" name="PausedTitle" class="title" style="position: absolute; top: 122px; left: 778px; color: rgb(0, 0, 0);" />
+        <ui:VisualElement name="pauseMenuButtons" class="menuList" style="position: absolute; top: 328px; left: 582px; height: 590px; -unity-text-align: lower-left; white-space: nowrap; align-items: stretch; justify-content: space-between; width: 682px; flex-direction: column; flex-wrap: wrap;">
+            <ui:Label text="Resume" display-tooltip-when-elided="true" name="resume-button" style="color: rgb(0, 0, 0);" />
+            <ui:Label text="Options" display-tooltip-when-elided="true" name="options-button" style="color: rgb(0, 0, 0);" />
+            <ui:Label text="Restart Level" display-tooltip-when-elided="true" name="restart-button" style="color: rgb(0, 0, 0);" />
+            <ui:Label text="Exit to Main Menu" display-tooltip-when-elided="true" name="menu-button" style="color: rgb(0, 0, 0);" />
+            <ui:Label text="Exit Game" display-tooltip-when-elided="true" name="exit-button" style="color: rgb(0, 0, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement focusable="false" name="Background" style="height: 100%; width: 100%; min-width: auto; min-height: auto; justify-content: flex-end; padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%; flex-direction: column; background-image: url(&apos;/Assets/UI/UISprites/DiaBgBlur.png&apos;); background-color: rgba(0, 0, 0, 0.76);">
+        <ui:VisualElement name="DialogueImage" style="height: 70%; width: 55%; left: 25%;" />
+        <ui:VisualElement name="DiaGroup" style="flex-direction: row; align-items: flex-end; height: 30%; justify-content: space-between;">
+            <ui:VisualElement name="PortraitContainer" style="width: 25%; height: 250%; -unity-background-scale-mode: stretch-to-fill; align-items: stretch;">
+                <ui:VisualElement name="RadialGlow" style="width: 100%; height: 250%; align-items: stretch; background-image: url(&apos;/Assets/UI/UISprites/Character Sprites/RadialGlow.png&apos;); -unity-background-image-tint-color: rgb(0, 174, 255);" />
+                <ui:VisualElement name="AgnesImg" style="width: 100%; height: 100%; align-items: stretch; position: absolute; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="EmployeeImg" style="width: 25%; height: 250%;" />
+            <ui:VisualElement name="Narrative_box" style="-unity-background-image-tint-color: rgb(255, 255, 255); height: 100%; width: 100%; justify-content: flex-start; padding-left: 4%; padding-right: 4%; padding-top: 1%; padding-bottom: 1.5%; position: absolute; background-image: url(&apos;/Assets/UI/UISprites/Office_TxtBox.png&apos;);">
+                <ui:Label text="Name" display-tooltip-when-elided="true" name="Name_label" style="height: 23%; width: 100%; font-size: 48px; color: rgb(0, 0, 0); -unity-font: url(&apos;/Assets/TextMesh Pro/Fonts/Hubballi/Hubballi-Regular.ttf&apos;); -unity-font-definition: none;" />
+                <ui:Label display-tooltip-when-elided="true" name="Dialogue_label" style="font-size: 28px; width: 98%; height: 53%; color: rgb(0, 0, 0); overflow: visible; white-space: normal; padding-left: 2px; -unity-font: url(&apos;/Assets/TextMesh Pro/Fonts/Syne_Mono/SyneMono-Regular.ttf&apos;); -unity-font-definition: none;" />
+                <ui:VisualElement name="TexNexBox" style="flex-direction: row; width: 100%; justify-content: space-between; align-items: center; max-height: 50%; height: 20%; bottom: 9%; position: absolute; left: 4.5%;">
+                    <ui:Button text="Skip" display-tooltip-when-elided="true" name="skip-button" style="width: 10%; height: 100%; font-size: 28px; left: 1%; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; background-color: rgba(255, 255, 255, 255);" />
+                    <ui:Button text="Next" display-tooltip-when-elided="true" name="Next_button" style="width: 10%; height: 100%; font-size: 28px; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); left: -1%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
